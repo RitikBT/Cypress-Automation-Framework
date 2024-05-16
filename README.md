@@ -10,12 +10,12 @@ Cypress is a next generation front end testing tool built for the modern web. Th
 
 To get started with this framework, follow these steps:
 
-### 1. Install Cypress
+###  Install Cypress
 
 ```bash
 npm install cypress --save-dev
 ```
-### 2. Install Cypress-XPath Plugin
+###  Install Cypress-XPath Plugin
 Cypress-XPath is a useful plugin that enables you to use XPath selectors in your Cypress tests. Install it using npm:
 ```
 npm install -D cypress-xpath
@@ -33,19 +33,16 @@ This framework is designed to support testing :
 
 - API Testing: API tests are located in the e2e/apiTest folder. These tests utilize the apiconfig.json file for endpoint configuration and the apiUtils.js utility functions for common API interactions.
 
+
 ### Folder Structure
 
-- reports: Stores test reports and screenshots generated during test execution.
-
-- pages: Contains page class definitions for different web pages, making it easier to interact with web elements.
-
-- logs: Logs generated during test execution are saved in this folder.
-
-- fixtures: Test data in JSON format is stored here.
-
-- videos: Store videos of the test cases.
-
-- screenshot: Store Screenshot of failed test cases.
+- `cypress/fixtures`: Contains external fixtures (e.g., login credentials data) that can be used to mock data during tests.
+- `cypress/support`: Contains custom commands and global configuration.
+- `cypress/pages`: Contains the Page Object Model (POM) classes representing web pages and their elements.
+- `cypress/reports`: Contains the report for tests.
+- `cypress/screenshot`: Contains Screenshot of failed test cases.
+- `cypress/videos`: Contains videos of the test cases.
+- `cypress/logs`: Logs generated during test execution are saved in this folder.
   
 
 ### Running Tests
@@ -57,3 +54,13 @@ To run all UI testson Edge browser, use the following command:
 ```
 npm run test:edge
 ```
+
+## 📊 Reporting
+
+Mochawesome report (Screenshots and Videos are attached by default on test failure) is stored in the `cypress/reports` directory.
+
+
+###  Configuration
+
+- Modify `cypress.config.json` for Cypress configuration settings.
+- Customize `commands.js` and other files in `cypress/support` for reusable commands.
