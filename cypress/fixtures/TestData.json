@@ -1,0 +1,11 @@
+{
+  "validUser": {
+    "userName": "Admin",
+    "password": "admin123"
+  },
+
+  "Employee_Info":{
+    "firstName" : "Rajiv",
+    "lastName" : "Demo"
+  }
+}

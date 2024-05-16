@@ -1,0 +1,17 @@
+{
+  "name": "cypressframework",
+  "version": "1.0.0",
+  "description": "Cypress Framework build for WebUI and API Testing",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "npx cypress run --headed --spec cypress/e2e/Test/*.cy.js --browser chrome ",
+    "test:edge": "npx cypress run --headed --spec cypress/e2e/Test/*.cy.js --browser edge "
+  },
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^13.8.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^10.4.0"
+  }
+}
