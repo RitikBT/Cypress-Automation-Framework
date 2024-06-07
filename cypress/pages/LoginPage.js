@@ -14,7 +14,7 @@ export class LoginPage{
 
     setUserName(username){
         cy.logger('application','Entering user name');
-        cy.get(this.LoginLocators.usernameTxt).type(username); 
+        cy.get(this.LoginLocators.usernameTxt).type(username)
         
     }
 
